@@ -1,3 +1,5 @@
-module.exports = {
-    outDir: 'docs',
+export default {
+    build: {
+        outDir: 'docs'
+    }
 }

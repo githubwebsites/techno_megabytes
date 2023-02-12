@@ -1,9 +1,82 @@
 @layer template;
 
 :root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
   --primary-color: #2563eb;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .img-fluid {
   width: 170px;
+}
+
+.nav-link {
+  position: relative;
+  padding-inline: 0.8rem;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to right, #2563eb, #06b6d4);
+  width: 100%;
+  height: 0.3rem;
+  bottom: -0.3rem;
+  left: 0;
+  border-radius: 3rem;
+  scale: 0 1;
+  transition: scale 0.3s;
+}
+
+.nav-link:hover::before {
+  scale: 1 1;
+}
+
+.hero-heading {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #2563eb, #06b6d4, #2563eb);
+  -webkit-background-clip: text;
+  background-size: 200%;
+  animation: gradient-animation 3s alternate infinite;
+}
+
+.text-gray {
+  color: rgb(54, 54, 54);
+}
+
+.get-a-call {
+  background-color: #dbeafe;
+  font-weight: bold;
+}
+
+.get-a-call:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.service-card-container {
+  gap: 2rem;
+}
+
+.service-card {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-radius: 5%;
+  max-width: none;
+  flex-basis: calc(33.33% - 2rem);
+  background-color: #fafafa;
+}
+
+@keyframes gradient-animation {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 100% 0%;
+  }
 }

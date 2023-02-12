@@ -1,0 +1,5 @@
+@layer template;
+
+:root {
+    --primary-color: #2563eb;
+}

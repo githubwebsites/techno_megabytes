@@ -1,5 +1,9 @@
 @layer template;
 
 :root {
-    --primary-color: #2563eb;
+  --primary-color: #2563eb;
+}
+
+.img-fluid {
+  width: 170px;
 }

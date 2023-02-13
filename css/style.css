@@ -1,14 +1,5 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
-
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700");
-
-
 
 html {
   overflow-x: hidden;
@@ -238,9 +229,11 @@ input[type="tel"]:focus {
 }
 
 .bg-gradient {
-  background-image: linear-gradient(145deg,
-      rgba(19, 177, 205, 0.95) 0%,
-      rgba(152, 119, 234, 0.95) 100%);
+  background-image: linear-gradient(
+    145deg,
+    rgba(19, 177, 205, 0.95) 0%,
+    rgba(152, 119, 234, 0.95) 100%
+  );
   background-repeat: repeat-x;
 }
 
@@ -367,7 +360,6 @@ a:focus {
 }
 
 @media (max-width: 480px) {
-
   h2,
   .h2 {
     font-size: 1.3rem;
@@ -683,7 +675,7 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/main-banner1.jpg") no-repeat 80% 50%;
+  background: url("../images/bg/main-banner2.jpg") no-repeat 80% 50%;
   background-size: cover;
   padding: 120px 0px;
   min-height: 800px;
@@ -1459,7 +1451,7 @@ ul.dropdown-menu li {
   margin-top: 20px;
 }
 
-.post-comments .media>.pull-left {
+.post-comments .media > .pull-left {
   padding-right: 20px;
 }
 
@@ -1584,7 +1576,7 @@ ul.dropdown-menu li {
   margin-right: 20px;
 }
 
-.post-author>img {
+.post-author > img {
   border: 1px solid #dedede;
   max-width: 120px;
   padding: 5px;

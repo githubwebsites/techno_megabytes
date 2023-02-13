@@ -13,8 +13,13 @@
   font-size: 1rem !important;
 }
 
+html {
+  min-width: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  min-width: 0;
 }
 
 .img-fluid {
@@ -106,13 +111,5 @@ body {
 
   to {
     background-position: 100% 0%;
-  }
-}
-
-
-
-@media only screen and (max-width: 1000px) {
-  :root {
-    /* font-size: 2rem; */
   }
 }

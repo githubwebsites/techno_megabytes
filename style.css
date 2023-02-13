@@ -9,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   --primary-color: #2563eb;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -104,5 +105,13 @@ body {
 
   to {
     background-position: 100% 0%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    /* font-size: 2rem; */
   }
 }

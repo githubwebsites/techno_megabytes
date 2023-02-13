@@ -1,14 +1,5 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
-
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700");
-
-
 
 html {
   overflow-x: hidden;
@@ -682,7 +673,7 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/main-banner1.jpg") no-repeat;
+  background: url("../images/bg/main-banner1.jpg") no-repeat 80% 50%;
   background-size: cover;
   /* padding: 7.5rem 0px; */
   min-height: 50rem;
@@ -1459,7 +1450,7 @@ ul.dropdown-menu li {
 }
 
 .post-comments .media>.pull-left {
-  padding-right: 1.25rem;
+  padding-right: 20px;
 }
 
 .post-comments .comment-author {

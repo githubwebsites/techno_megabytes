@@ -1,5 +1,9 @@
 @layer template;
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,6 +47,7 @@ body {
   -webkit-background-clip: text;
   background-size: 200%;
   animation: gradient-animation 3s alternate infinite;
+  line-height: 0.9;
 }
 
 .text-gray {
@@ -60,16 +65,37 @@ body {
 }
 
 .service-card-container {
-  gap: 2rem;
+  /* outline: 1px solid black; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+
 }
 
 .service-card {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 5%;
   max-width: none;
-  flex-basis: calc(33.33% - 2rem);
+  max-height: none;
+  min-width: none;
+  min-height: none;
+  width: calc(33.33% - 2rem);
   background-color: #fafafa;
+  border: 1px solid hsl(0, 0%, 88%);
+  flex: none;
+  aspect-ratio: 1/1;
+  display: block;
+  box-sizing: border-box;
+  min-width: 20rem;
 }
+
+
+
+
 
 @keyframes gradient-animation {
   from {

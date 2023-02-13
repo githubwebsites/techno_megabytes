@@ -53,7 +53,7 @@ body {
   background-image: linear-gradient(45deg, #2563eb, #06b6d4, #2563eb);
   -webkit-background-clip: text;
   background-size: 200%;
-  animation: gradient-animation 3s alternate infinite;
+  animation: gradient-animation 2s alternate infinite;
   line-height: 0.9;
 }
 
@@ -62,13 +62,19 @@ body {
 }
 
 .get-a-call {
-  background-color: #dbeafe;
+  background-color: rgba(255, 255, 255, 0.685);
+  font-weight: bold;
+  color: #2563eb;
   font-weight: bold;
 }
 
 .get-a-call:hover {
   background-color: #2563eb;
   color: white;
+}
+
+.get-a-call i {
+  animation: call 2s alternate infinite;
 }
 
 .service-card-container {
@@ -100,6 +106,20 @@ body {
   min-width: 20rem;
 }
 
+.navbar {
+  backdrop-filter: blur(15px);
+}
+
+.banner {
+  background-image: url("../images/bg/main-banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 10rem 2rem;
+  box-shadow: 0 -20px 20px white inset;
+}
+
+
+
 
 
 
@@ -111,5 +131,17 @@ body {
 
   to {
     background-position: 100% 0%;
+  }
+}
+
+@keyframes call {
+  from {
+    scale: 1;
+    translate: 0;
+  }
+
+  to {
+    scale: 1.5;
+    translate: 0.5rem;
   }
 }

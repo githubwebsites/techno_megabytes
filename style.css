@@ -55,6 +55,7 @@ body {
   background-size: 200%;
   animation: gradient-animation 2s alternate infinite;
   line-height: 0.9;
+  letter-spacing: normal;
 }
 
 .text-gray {
@@ -66,6 +67,7 @@ body {
   font-weight: bold;
   color: #2563eb;
   font-weight: bold;
+  letter-spacing: normal;
 }
 
 .get-a-call:hover {

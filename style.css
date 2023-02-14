@@ -130,7 +130,16 @@ body {
   }
 
   .banner .block {
-    padding-top: 0;
+    padding-top: 2rem;
+  }
+
+  :has(>.block) {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.925),
+        rgba(255, 255, 255, 0.541)),
+      url("./images/bg/main-banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0, -25rem 0;
   }
 
   .banner {
@@ -157,9 +166,6 @@ body {
     padding-block: 2rem;
 
   }
-
-
-
 
 }
 

@@ -17,6 +17,13 @@
 
 }
 
+@media (width <450px) {
+    .contact-form-wrap::before {
+        background-position: 0 0;
+        transform: rotateY(180deg);
+    }
+}
+
 .contact-form-wrap :is(input, textarea, select) {
     outline: 1.5px solid rgb(146, 146, 146);
 }

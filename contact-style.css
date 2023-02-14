@@ -11,17 +11,14 @@
     position: absolute;
     inset: 0;
     opacity: 0.3;
-    filter: blur(100px);
+    /* filter: blur(100px); */
     z-index: -1;
-    background-color: #ff99e2;
-    background-image:
-        radial-gradient(at 25% 84%, hsla(198, 68%, 74%, 1) 0px, transparent 50%),
-        radial-gradient(at 50% 5%, hsla(28, 73%, 78%, 1) 0px, transparent 50%),
-        radial-gradient(at 93% 16%, hsla(96, 65%, 75%, 1) 0px, transparent 50%),
-        radial-gradient(at 13% 6%, hsla(252, 91%, 65%, 1) 0px, transparent 50%),
-        radial-gradient(at 12% 86%, hsla(87, 98%, 61%, 1) 0px, transparent 50%),
-        radial-gradient(at 9% 72%, hsla(123, 65%, 71%, 1) 0px, transparent 50%),
-        radial-gradient(at 15% 4%, hsla(324, 94%, 67%, 1) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    background-image: url("./images/bg/telephone.jpg");
+    background-size: contain;
+    background-position: -13rem -3rem;
+    transform: rotateY(180deg);
+
 }
 
 .contact-form-wrap :is(input, textarea, select) {

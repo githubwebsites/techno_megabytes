@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-width: 0;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   background-image: linear-gradient(to right, #2563eb, #06b6d4);
   width: 100%;
@@ -56,6 +56,7 @@ body {
 .hero-heading {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(45deg, #2563eb, #06b6d4, #2563eb);
+  background-clip: text;
   -webkit-background-clip: text;
   background-size: 200%;
   animation: gradient-animation 2s alternate infinite;
@@ -127,7 +128,7 @@ body {
 }
 
 .banner {
-  background-image: url("./images/bg/main-banner.webp");
+  background-image: url('./images/bg/main-banner.webp');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 10rem 2rem;
@@ -147,15 +148,16 @@ body {
 
   :has(> .block.hero) {
     padding-bottom: 2rem;
-    background-image: linear-gradient(to right,
+    background-image: linear-gradient(
+        to right,
         rgba(255, 255, 255, 0.925) 40%,
-        rgba(255, 255, 255, 0.26)),
-      url("./images/bg/main-banner.webp");
+        rgba(255, 255, 255, 0.26)
+      ),
+      url('./images/bg/main-banner.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0, -20rem 0rem;
     box-shadow: 0 -20px 20px white inset;
-
   }
 
   .banner {

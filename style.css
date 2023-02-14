@@ -110,6 +110,15 @@ body {
 
 .navbar {
   backdrop-filter: blur(15px);
+  background-color: transparent;
+}
+
+.navbar.bright {
+  backdrop-filter: blur(15px) brightness(150%);
+}
+
+.navbar.bright .nav-link {
+  color: white;
 }
 
 .banner {
@@ -121,7 +130,12 @@ body {
   height: 100vh;
 }
 
+
+
+
+
 @media (width <450px) {
+
   .hero-heading {
     line-height: 1;
   }
@@ -130,12 +144,10 @@ body {
     padding-top: 2rem;
   }
 
-  :has(> .block) {
-    background-image: linear-gradient(
-        to right,
+  :has(> .block.hero) {
+    background-image: linear-gradient(to right,
         rgba(255, 255, 255, 0.925),
-        rgba(255, 255, 255, 0.541)
-      ),
+        rgba(255, 255, 255, 0.541)),
       url("./images/bg/main-banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -166,6 +178,9 @@ body {
     padding-block: 2rem;
   }
 }
+
+
+
 
 @keyframes gradient-animation {
   from {

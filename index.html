@@ -224,7 +224,7 @@
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="icon-block text-center mb-4 mb-lg-0">
                   <i class="ti-light-bulb"></i>
-                  <h5>Expertise</h5>
+                  <h5>Data analysis</h5>
                   <p>A complete web app solution for business</p>
                 </div>
               </div>
@@ -260,21 +260,86 @@
     <section class="section cta">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-lg-8">
             <div class="cta-content bg-white p-5 rounded">
               <h3 class="mb-4">
-                Assurance Service In Software<span class="text-color-primary">
-                  Testing</span
-                >
+                Contact Us
+                <span class="text-color-primary">Today!</span>
               </h3>
               <p class="mb-30">
-                An Independent Validation and Testing services from SISAR. Helps
-                to reduce software development efforts
+                Interested in our IT services? Fill out the contact form below
+                to request a quote or ask questions. Our experienced team will
+                respond promptly with tailored solutions to meet your needs
               </p>
 
-              <a href="project.html" class="btn btn-main"
-                >Portfolio<i class="fa fa-angle-right ml-2"></i
-              ></a>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form
+                      id="contact-form"
+                      class="contact__form"
+                      method="post"
+                      action="mail.php"
+                    >
+                      <!-- form message -->
+                      <div class="row">
+                        <div class="col-12">
+                          <div
+                            class="alert alert-success contact__msg"
+                            style="display: none"
+                            role="alert"
+                          >
+                            Your message was sent successfully.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          name="subject"
+                          id="subject"
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Subject"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          name="name"
+                          id="name"
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          name="email"
+                          id="email"
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+
+                      <div class="form-group-2 mb-4">
+                        <textarea
+                          name="message"
+                          id="message"
+                          class="form-control"
+                          rows="4"
+                          placeholder="Your Message"
+                        ></textarea>
+                      </div>
+                      <button class="btn btn-main" name="submit" type="submit">
+                        Send Message
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -705,4 +770,6 @@
 
     <script src="./js/script.js"></script>
   </body>
+</html>
+
 </html>

@@ -106,7 +106,6 @@ input[type="tel"]:focus {
   font-size: 1rem;
   font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0.3125rem;
   padding: 0.7rem 2rem;
   text-transform: uppercase;
   border-radius: 0.3125rem;
@@ -228,11 +227,9 @@ input[type="tel"]:focus {
 }
 
 .bg-gradient {
-  background-image: linear-gradient(
-    145deg,
-    rgba(19, 177, 205, 0.95) 0%,
-    rgba(152, 119, 234, 0.95) 100%
-  );
+  background-image: linear-gradient(145deg,
+      rgba(19, 177, 205, 0.95) 0%,
+      rgba(152, 119, 234, 0.95) 100%);
   background-repeat: repeat-x;
 }
 
@@ -359,6 +356,7 @@ a:focus {
 }
 
 @media (max-width: 480px) {
+
   h2,
   .h2 {
     font-size: 1.3rem;
@@ -686,7 +684,6 @@ ul.dropdown-menu li {
   font-size: 5.7rem;
   line-height: 1.2;
   font-weight: 400;
-  letter-spacing: -1.125rem;
   text-transform: capitalize;
 }
 
@@ -1448,7 +1445,7 @@ ul.dropdown-menu li {
   margin-top: 1.25rem;
 }
 
-.post-comments .media > .pull-left {
+.post-comments .media>.pull-left {
   padding-right: 20px;
 }
 
@@ -1573,7 +1570,7 @@ ul.dropdown-menu li {
   margin-right: 1.25rem;
 }
 
-.post-author > img {
+.post-author>img {
   border: 0.0625rem solid #dedede;
   max-width: 7.5rem;
   padding: 0.3125rem;

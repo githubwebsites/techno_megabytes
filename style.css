@@ -13,16 +13,21 @@
   font-size: 1rem !important;
 }
 
+::selection {
+  color: white;
+  background-color: #2563eb;
+}
+
 html {
   min-width: 0;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   min-width: 0;
 }
 
-.img-fluid {
+.img-logo {
   width: 10.625rem;
 }
 
@@ -32,7 +37,7 @@ body {
 }
 
 .nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: linear-gradient(to right, #2563eb, #06b6d4);
   width: 100%;
@@ -55,6 +60,7 @@ body {
   background-size: 200%;
   animation: gradient-animation 2s alternate infinite;
   line-height: 0.9;
+  letter-spacing: normal;
 }
 
 .text-gray {
@@ -66,6 +72,7 @@ body {
   font-weight: bold;
   color: #2563eb;
   font-weight: bold;
+  letter-spacing: normal;
 }
 
 .get-a-call:hover {
@@ -77,8 +84,6 @@ body {
   animation: call 2s alternate infinite;
 }
 
-
-
 .service-card-container {
   /* outline: 1px solid black; */
   display: flex;
@@ -88,11 +93,11 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
-
 }
 
 .service-card {
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 5%;
   max-width: none;
   max-height: none;
@@ -102,7 +107,7 @@ body {
   background-color: #fafafa;
   border: 1px solid hsl(0, 0%, 88%);
   flex: none;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   display: block;
   box-sizing: border-box;
   min-width: 20rem;
@@ -110,6 +115,15 @@ body {
 
 .navbar {
   backdrop-filter: blur(15px);
+  background-color: transparent;
+}
+
+.navbar.bright {
+  backdrop-filter: blur(15px) brightness(150%);
+}
+
+.navbar.bright .nav-link {
+  color: white;
 }
 
 .banner {
@@ -121,16 +135,25 @@ body {
   height: 100vh;
 }
 
-
-
 @media (width <450px) {
-
   .hero-heading {
     line-height: 1;
   }
 
   .banner .block {
-    padding-top: 0;
+    padding-top: 2rem;
+  }
+
+  :has(> .block.hero) {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.925),
+        rgba(255, 255, 255, 0.541)
+      ),
+      url("./images/bg/main-banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0, -25rem 0;
   }
 
   .banner {
@@ -155,17 +178,8 @@ body {
 
   .why-choose-us-container {
     padding-block: 2rem;
-
   }
-
-
-
-
 }
-
-
-
-
 
 @keyframes gradient-animation {
   from {

@@ -4,9 +4,9 @@
 <head>
   <meta name="description" content="Techno-Megabytes,business,company,agency,modern,tech,software" />
   <meta name="author" content="Techno-Megabytes" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- theme meta -->
   <meta name="theme-name" content="Techno-Megabytes" />
@@ -53,15 +53,22 @@
     @import url("./css/style.css") layer(template);
   </style>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .nav-link {
+      color: white;
+    }
+  </style>
 
   <script src="./main.js" type="module"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg py-4 navigation header-padding" id="navbar">
+  <nav class="navbar bright navbar-expand-lg py-4 navigation header-padding" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="./images/techno-megabytes-logo.png" alt="techno-megabytes-logo" class="img-fluid" />
+        <img src="./images/techno-megabytes-logo.png" alt="techno-megabytes-logo" class="img-logo" />
       </a>
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -78,7 +85,7 @@
             <a class="nav-link" href="./service.html">Our Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#choose-us">Why Choose Us</a>
+            <a class="nav-link" href="./index.html#choose-us">Why Choose Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./about.html">About</a>
@@ -166,33 +173,35 @@
 
   <section class="video-block section bg-light">
     <div class="container">
+      <h2 class="mb-4 text-center">Your Technology Partner for Success</h2>
       <div class="row align-items-center">
-        <div class="col-lg-12">
+        <div class="col-lg-6 pb-4">
           <div class="heading feature-list">
-            <h2 class="mb-4 text-center">
+            <p class="text-justify">
+              At <a href="./index.html" target="_blank">Techno Megabytes</a> ,
+              we believe that technology has the power to transform businesses
+              and change the world. As a leading provider of information
+              technology services, we are committed to delivering innovative
+              solutions that help our clients stay ahead of the curve and
+              achieve their full potential.
+              <br />
+              <br />
+              With a team of highly skilled and knowledgeable professionals,
+              we offer a full range of services, from cloud computing and
+              cybersecurity to custom software development and data analytics.
+              <br />
+              <br />
+              We take pride in our ability to understand the unique needs of
+              each client and provide tailored solutions that meet those
+              needs. We are also committed to being a responsible and ethical
+              corporate citizen, using technology for the greater good. Join
+              us on our mission to shape the future. Let's work together to
+              create a better tomorrow with Techno Megabytes.
 
-              Your Technology Partner for Success</h2>
-            <p class="text-justify p-4">
-              At Techno Megabytes, we believe that technology has the power to
-              transform businesses and change the world. As a leading provider
-              of information technology services, we are committed to
-              delivering innovative solutions that help our clients stay ahead
-              of the curve and achieve their full potential.
-              <br>
-              With a team of
-              highly skilled and knowledgeable professionals, we offer a full
-              range of services, from cloud computing and cybersecurity to
-              custom software development and data analytics.
-              <br>
-              We take pride in
-              our ability to understand the unique needs of each client and
-              provide tailored solutions that meet those needs. We are also
-              committed to being a responsible and ethical corporate citizen,
-              using technology for the greater good. Join us on our mission to
-              shape the future.
-
-              Let's work together to create a better
-              tomorrow with Techno Megabytes.
+              <br />
+              <br />
+              We have a vision that reflects our resolve,"Revolutionizing the
+              world through technology."
             </p>
 
             <!-- <ul class="list-unstyled mt-4 mb-5">
@@ -216,16 +225,13 @@
           </div>
         </div>
 
-        <!-- <div class="col-lg-6">
-            <div class="video-img">
-              <img src="images/about/img-34.png" alt="" class="img-fluid" />
-              <a data-video-id="sXoKSD8QJEA" class="video-play"
-                ><i class="ti-control-play"></i
-              ></a>
-            </div>
+        <div class="col-lg-6 pb-4">
+          <div class="video-img">
+            <img src="images/about/img-34.png" alt="" class="img-fluid" />
           </div>
         </div>
-      </div> -->
+      </div>
+    </div>
   </section>
 
   <!-- <section class="section team">
@@ -480,12 +486,11 @@
         <div class="col-lg-3 mr-auto col-sm-6">
           <div class="widget mb-5 mb-lg-0">
             <div class="logo mb-4">
-              <h3>Orbitor</h3>
+              <a class="navbar-brand" href="./index.html">
+                <img src="./images/techno-megabytes-logo.png" alt="techno-megabytes-logo" class="img-logo" />
+              </a>
             </div>
-            <p>
-              Tempora dolorem voluptatum nam vero assumenda voluptate, facilis
-              ad eos obcaecati tenetur veritatis eveniet distinctio possimus.
-            </p>
+            <p>"Revolutionizing the world through technology."</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
@@ -493,10 +498,10 @@
             <h4 class="text-capitalize mb-4">Company</h4>
 
             <ul class="list-unstyled footer-menu lh-35">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <!-- <li><a href="#">Team</a></li> -->
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -505,10 +510,12 @@
             <h4 class="text-capitalize mb-4">Support</h4>
 
             <ul class="list-unstyled footer-menu lh-35">
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li>
+                <a href="./terms-and-condition.html">Terms & Conditions</a>
+              </li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <!-- <li><a href="#">Support</a></li>
+                <li><a href="#">FAQ</a></li> -->
             </ul>
           </div>
         </div>
@@ -517,22 +524,22 @@
             <h4 class="text-capitalize mb-4">Get in Touch</h4>
             <h6>
               <a href="tel:+23-345-67890">
-                <i class="ti-headphone-alt mr-3"></i>Support@megakit.com</a>
+                <i class="ti-headphone-alt mr-3"></i>12893738canadainc@gmail.com</a>
             </h6>
             <h6>
               <a href="mailto:support@gmail.com">
-                <i class="ti-mobile mr-3"></i>+23-456-6588</a>
+                <i class="ti-mobile mr-3"></i>647 554 5574</a>
             </h6>
 
             <ul class="list-inline footer-socials mt-5">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/themefisher"><i class="ti-facebook mr-2"></i></a>
+                <a href="./index.html"><i class="ti-facebook mr-2"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://twitter.com/themefisher"><i class="ti-twitter mr-2"></i></a>
+                <a href="./index.html"><i class="ti-twitter mr-2"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.pinterest.com/themefisher/"><i class="ti-linkedin mr-2"></i></a>
+                <a href="./index.html"><i class="ti-linkedin mr-2"></i></a>
               </li>
             </ul>
           </div>
@@ -544,8 +551,8 @@
           <div class="col-lg-6">
             <div class="copyright">
               &copy; Copyright Reserved to
-              <span class="text-color">Orbitor</span> by
-              <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+              <span class="text-color">Techno-Megabytes</span> by
+              <a href="#" target="_blank">Techno-Megabytes</a>
             </div>
           </div>
         </div>
